@@ -1,79 +1,891 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Pooja's Recipe</title>
-        <link rel="stylesheet" href="css/Index.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand align-middle" href="#">
-                <img src="img/cooking.png" alt="" width="60" height="60" style="margin-top:-30px;" class="d-inline-block align-text-top">
-                    <p class="display-6 d-inline-block ">Karwaan... <span class="d-block text-end" style="font-size: 35%;">Safar ek naye swad ka</span></p>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Breakfast
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Kanda Poha</a></li>
-                              <li><a class="dropdown-item" href="#">Dhokla</a></li>
-                              <li><a class="dropdown-item" href="#">Idli</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Lunch/Dinner
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Biryani</a></li>
-                              <li><a class="dropdown-item" href="#">Matar Panner</a></li>
-                              <li><a class="dropdown-item" href="#">Daal</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Desert
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Custurd</a></li>
-                              <li><a class="dropdown-item" href="#">Gulab Jamun</a></li>
-                              <li><a class="dropdown-item" href="#">Cake</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Tea Time Snacks
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Namakpare</a></li>
-                              <li><a class="dropdown-item" href="#">Pakoda</a></li>
-                              <li><a class="dropdown-item" href="#">Methi Puri</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <img  class="w-100" src="img/Title image.jpg"/>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karwaan &mdash; Safar ek naye swaad ka</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 
-        <div id="home-discription">
-            <h1 class="display-1 text-center">Welcome to Karwaan... <span class="d-block text-end" style="font-size: 35%;">Safar ek naye swad ka</span></h1>
-            <p class="fs-4">This is Pooja, host of this food blog.</p>
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <!-- Fixed navbar -->
+    
+    <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="img/logo.png" style="width: 60px; margin-top: -20px; display: inline !important;">
+            <span>Karwaan</span>
+          </a>
         </div>
 
-       
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#" data-nav-section="welcome">Welcome</a></li>
+            <li><a href="#" data-nav-section="specialties">Specialties</a></li>
+            <li><a href="#" data-nav-section="Breakfast">Breakfast</a></li>
+            <li><a href="#" data-nav-section="Meal">Meal</a></li>
+            <li><a href="#" data-nav-section="Snack">Snack</a></li>
+            <li><a href="#" data-nav-section="Dessert">Dessert</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="flexslider" data-section="welcome">
+      <ul class="slides">
+        <li style="background-image: url(img/Titleimage.jpg)" class="overlay" data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Welcome to</h1>
+                  <h3 class="secondary-heading">Karwaan</h3>
+                  <p class="sub-heading">Safar ek naye swaad ka</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(img/Image1.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Cook</h1>
+                  <h3 class="secondary-heading">With me</h3>
+                  <p class="sub-heading">Serve with love </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </li>
+        <li style="background-image: url(img/Image2.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Enjoy</h1>
+                  <h3 class="secondary-heading">The Food </h3>
+                  <p class="sub-heading">With family & friends </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="probootstrap-section probootstrap-bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-center probootstrap-animate">
+            <div class="probootstrap-heading dark">
+              <h1 class="primary-heading">Discover</h1>
+              <h3 class="secondary-heading">About Me</h3>
+              <span class="seperator">* * *</span>
+            </div>
+            <p> Welcome to the Karwaan. Myself Pooja host of this blog. This blog is for everyone who loves to cook and who doesn't.</p>
+            <p>I love to cook, but I haven't always. When I got married I started cooking food and realized that cooking could be fun and I gaining confidence as a home chef. </p>
+             <p>I will share my few vegetarian recipe with simple cooking method and ingredients without any compromise in taste.</p>  
+            <p>Now, Let's start safar ek naye swaad ka!</p>
+            
+          </div>
+          <div class="col-md-6 col-md-push-1 probootstrap-animate">
+            <p><img src="img/Myimage.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
+          </div>
+        </div>
+        <!-- END row -->
+      </div>
+    </section>
+
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_2.jpg);" data-stellar-background-ratio="0.5" data-section="specialties">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Discover</h2>
+              <h3 class="secondary-heading">My Specialties</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Snacks/Image3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+            
+                <h3><a href="#">Hummus</a></h3>
+                <p>Coming Soon</p>
+                <p class="">
+                  <a href="#" class="probootstrap-custom-link link-sm" data-toggle="modal" data-target="#ModalPalakpulao">Read More</a>
+                </p>                                                                    
+                
+                 <div class="modal-dialog modal-fullscreen-sm-down">
+  
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Snacks/Image4.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Spaghetti</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm" data-toggle="modal" data-target="#ModalPalakpulao">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Snacks/Image5.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Sandwich</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_4.jpg);"  data-stellar-background-ratio="0.5"  data-section="Breakfast">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Discover</h2>
+              <h3 class="secondary-heading">Breakfast</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image1.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+            
+                <h3><a href="#">Sabudana upma</a></h3>
+                <p>Coming Soon</p>
+                <p class="">
+                  <a href="#" class="probootstrap-custom-link link-sm" data-toggle="modal" data-target="#ModalPalakpulao">Read More</a>
+                </p>                                                                    
+                
+                 <div class="modal-dialog modal-fullscreen-sm-down">
+  
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Besan Dhokla</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm" data-toggle="modal" data-target="#ModalPalakpulao">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Sabudana upma</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image4.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Suji Idli</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div><div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image5.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Sorgum upma</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image6.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Matar & Sweetcorn upma</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image7.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Suji Pancake</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image8.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Suji upma</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image9.png" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Poha</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image11.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Suji uttapam</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Breakfast/Image12.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Vermicilli upma</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_5.jpg);"  data-stellar-background-ratio="0.5" data-section="Meal">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Discover</h2>
+              <h3 class="secondary-heading">Meal</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Meal/Image1.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+            
+                <h3><a href="#">Litti Chokha</a></h3>
+                <p>Litti & Chokha is a popular cuisine of Bihar,India. "Litti" is prepared by stuffing gram-flour on wheat dough & "Chokha" is prepared by mashed Potatoes & eggplants. </p>
+                <p class="">
+                  <a href="#" class="probootstrap-custom-link link-sm" data-toggle="modal" data-target="#Modallittichokha">Read More</a>
+                </p>                                                                    
+                
+                 <div class="modal-dialog modal-fullscreen-sm-down">
+  
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Meal/Image2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Palak Pulao</a></h3>
+                <p>idhdidh</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm" data-toggle="modal" data-target="#ModalPalakpulao">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Meal/Image3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Backed veggies</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Meal/Image4.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Matar Paneer</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div><div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Meal/Image5.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Fara</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Meal/Image6.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Chilli Paneer</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Meal/Image7.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Fruit Salad with sandwich</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Meal/Image8.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Rajma Rice</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_4.jpg);"  data-stellar-background-ratio="0.5" data-section="Snack">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Discover</h2>
+              <h3 class="secondary-heading">Snack</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Snacks/Image1.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+            
+                <h3><a href="#">Samosa</a></h3>
+                <p>jidjdidi</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Snacks/Image2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Maggi</a></h3>
+                <p>idhdidh</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/img_square_4.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Namakpare</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_4.jpg);"  data-stellar-background-ratio="0.5" data-section="Dessert">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Discover</h2>
+              <h3 class="secondary-heading">Dessert</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Dessert/Image1.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+            
+                <h3><a href="#">Chocolate Cake</a></h3>
+                <p>Coming Soon.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Dessert/Image2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Gulab Jamun</a></h3>
+                <p>Coming Soon</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/Dessert/image3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+              <div class="text">
+              
+                <h3><a href="#">Suji Cake</a></h3>
+                <p>Coming Soon.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm"data-toggle="modal" data-target="#ModalBackedveggies">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Modal-Litti Chokha -->
+<div class="modal fade" id="Modallittichokha" tabindex="-1" role="dialog" aria-labelledby="Modallittichokha">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModallittichokhaLabel">Litti Chokha</h4>
+      </div>
+      <div class="modal-body">
+        
+
+        <div>
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Prepration & Cooking time</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Ingredients</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Cooking method</a></li>
+            <li role="presentation"><a href="#tipstricks" aria-controls="tipstrics" role="tab" data-toggle="tab">Tips & Tricks</a></li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+              <br/>
+              <p>Prepration Time 15-20 minutes</p>
+              <p>Cooking time 40-45 minutes</p>
+              <p>Serving 2-3 person</p>
+                
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">
+              <div class="panel panel-default">
+                <div class="panel-heading">For Dough</div>
+                <div class="panel-body">
+                  <ul>
+                  <li>1 Cup Wheat flour</li>
+                  <li>1/4 tsp baking powder</li>
+                  <li>2tbsp oil or ghee</li>
+                  <li>Water for kneading</li>              
+                </ul>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">For Stuffing</div>
+                <div class="panel-body">
+                  <ul>
+                    <li>1/2 Cup roasted gram flour/sattu</li>
+                    <li>1 medium size chopped onion</li>
+                    <li>1-2 chopped green chilli</li>
+                    <li>1 tsp lemon juice</li>
+                    <li>1/4 tsp carom seeds</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>  
+                  </ul>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">For Stuffing</div>
+                <div class="panel-body">
+                 <ul>
+                   <li>4 medium size potatoes</li>
+                   <li>3 medium size eggplants</li>
+                   <li>2 medium size tomatoes </li>
+                   <li>2 cloves garlic</li>
+                   <li>1-2 chopped green chilli</li>
+                   <li>2 tbsp lemon juice</li>
+                   <li>salt to taste</li>
+                   <li>1 tbsp oil</li>
+                  </ul>
+               </div>
+             </div>
+
+             <div class="panel panel-default">
+               <div class="panel-heading">Garnish</div>
+               <div class="panel-body">
+                 <ul>
+                   <li>2 tbsp coriander leaves chopped</li>
+                   <li>1/2 cup Ghee</li>
+                   </ul>
+                </div>
+              </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="messages">
+              <br/>
+              <p class="fw-bold">gfgfgf</p>
+              <ul>
+               <li>juhju</li>
+               <li>hujuj</li>
+              </ul>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="tipstricks">
+              <br/>
+              <p class="fw-bold">ijij</p>
+              <ul>
+               <li>juhju</li>
+               <li>hujuj</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal-Palak Pulao -->
+<div class="modal fade" id="ModalPalakpulao" tabindex="-1" role="dialog" aria-labelledby="ModalPalakpulao">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModalPalakpulaoLabel">Palak Pulao</h4>
+      </div>
+      <div class="modal-body">
+        
+
+        <div>
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#Palakpulaopreprationcooking" aria-controls="Palakpulaopreprationcooking" role="tab" data-toggle="tab">Prepration & Cooking time</a></li>
+            <li role="presentation"><a href="#Palakpulaoingredients" aria-controls="Palakpulaoingredients" role="tab" data-toggle="tab">Ingredients</a></li>
+            <li role="presentation"><a href="#Palakpulaocookingmethod" aria-controls="Palakpulaocookingmethod" role="tab" data-toggle="tab">Cooking method</a></li>
+            <li role="presentation"><a href="#Palakpulaotipstricks" aria-controls="Palakpulaotipstricks" role="tab" data-toggle="tab">Tips & Tricks</a></li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="Palakpulaopreprationcooking">
+              <br/>
+              <p>Prepration Time</p>
+              <p>Cooking time </p>
+              <p>Serving </p>
+                
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Palakpulaoingredients">
+              <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                  <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>              
+                </ul>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>  
+                  </ul>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                 <ul>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li</li>
+                  </ul>
+               </div>
+             </div>
+
+             <div class="panel panel-default">
+               <div class="panel-heading"></div>
+               <div class="panel-body">
+                 <ul>
+                   <li></li>
+                   <li></li>
+                   </ul>
+                </div>
+              </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="Palakpulaocookingmethod">
+              <br/>
+              <p class="fw-bold"></p>
+              <ul>
+               <li></li>
+               <li></li>
+              </ul>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="Palakpulaotipstricks">
+              <br/>
+              <p class="fw-bold"></p>
+              <ul>
+               <li></li>
+               <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>     
+      
+
+
+<!-- Modal-Backed veggies -->
+<div class="modal fade" id="ModalBackedveggies" tabindex="-1" role="dialog" aria-labelledby="ModalBackedveggies">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ModalBackedveggiesLabel">Backed Veggies</h4>
+      </div>
+      <div class="modal-body">
+        
+
+        <div>
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#Backedveggiespreprationcooking" aria-controls="Backedveggiespreprationcooking" role="tab" data-toggle="tab">Prepration & Cooking time</a></li>
+            <li role="presentation"><a href="#Backedveggiesingredients" aria-controls="Backedveggiesingredients" role="tab" data-toggle="tab">Ingredients</a></li>
+            <li role="presentation"><a href="#Backedveggiescookingmethod" aria-controls="Backedveggiescookingmethod" role="tab" data-toggle="tab">Cooking method</a></li>
+            <li role="presentation"><a href="#Backedveggiestipstricks" aria-controls="Backedveggiestipstricks" role="tab" data-toggle="tab">Tips & Tricks</a></li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="Backedveggiespreprationcooking">
+              <br/>
+              <p>Prepration Time</p>
+              <p>Cooking time</p>
+              <p>Serving</p>
+                
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Backedveggiesingredients">
+              <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                  <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>              
+                </ul>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>  
+                  </ul>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                 <ul>
+                   <li></li>
+                   <li></li>
+                   <li> </li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                  </ul>
+               </div>
+             </div>
+
+             <div class="panel panel-default">
+               <div class="panel-heading"></div>
+               <div class="panel-body">
+                 <ul>
+                   <li></li>
+                   <li></li>
+                   </ul>
+                </div>
+              </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="Backedveggiescookingmethod">
+              <br/>
+              <p class="fw-bold"></p>
+              <ul>
+               <li></li>
+               <li></li>
+              </ul>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="Backedveggiestipstricks">
+              <br/>
+              <p class="fw-bold"></p>
+              <ul>
+               <li></li>
+               <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.min.js"></script>
+
+  </body>
 </html>
