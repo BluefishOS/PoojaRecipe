@@ -358,6 +358,20 @@ a:hover, a:focus, a:active {
   color: #ffffff;
 }
 
+
+.probootstrap-navbar a.navbar-brand {
+  background: none;
+  color: #ffffff;
+}
+
+.probootstrap-navbar a.navbar-brand span{
+  font-size: 4rem;
+}
+
+.probootstrap-navbar.scrolled a.navbar-brand {
+  color: #000000 !important;
+}
+
 @media screen and (max-width: 768px) {
   .probootstrap-navbar .navbar-nav > li.active > a {
     color: rgba(0, 0, 0, 0.7);
