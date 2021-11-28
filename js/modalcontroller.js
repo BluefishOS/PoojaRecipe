@@ -236,26 +236,48 @@ var ModalData =[
             {
                 "title" :"",
                 "data":[
-                    ""
+                    "Prepration - 10 min",
+                    "Cooking-10 min",
+                    "Serve- 1 to 2 person",
+
                 ]
             }
         ],
         "ingredient" :[
             {
                 "title" :"",
-                "data":[]
+                "data":[
+                    "Soaked Sabudana - 2 Cup",
+                    "Roasted grinded peanut- 1/2 Cup",
+                    "Green chilli chopped- 1 tspn",
+                    "Curry leaves- 8-10 leaves",
+                    "Cumin seeds- 1/2 tspn",
+                    "Salt- as per your taste",
+                    "Lemon juice- 1 tspn",
+                    "Oil for cooking- 1 tbspn"
+                ]
             }
         ],
         "cooking" :[
             {
                 "title" :"",
-                "data":[]
+                "data":[
+                    "Take a non sticky pan and put oil heat it on medium heat flame",
+                    "Then add Curry leaves, green chilli and cumin seeds, saute it for 30 sec",
+                    "Add soaked Sabudana, Peanut and Salt, Saute it until tanslucent colour of Sabudana.",
+                    "Squeeze lemon on top of that and serve it."
+                ]
             }
         ],
         "tips" :[
             {
                 "title" :"",
-                "data":[]
+                "data":[
+                    "While soaking Sabudana first wash it with 2-3 cups of water for 2 to 3 times. This removes the excess starch of Sabudana.",
+                    "Soak it in water for overnight, water should be 1/2 inch above Sabudana",
+                    "Sabudana gets stuck in non sticky pan so always prefer non-sticky pan,",
+                    "You can garnish with chopped coriander leaves.",
+                ]
             }
         ]
     },
