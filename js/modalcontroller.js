@@ -225,11 +225,13 @@ var ModalData =[
         ]
     },
     {
-        "title" : "",
+        "title" : "Sabudana upma",
         "preparation" :[
             {
                 "title" :"",
-                "data":[]
+                "data":[
+                    ""
+                ]
             }
         ],
         "ingredient" :[

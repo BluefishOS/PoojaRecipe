@@ -193,7 +193,7 @@
               <div class="text">
             
                 <h3><a href="#">Sabudana upma</a></h3>
-                <p>Coming Soon</p>
+                <p>Sabudana upma is an Indian dish made from soaked tapioca pearls. It is often made with crunchy roasted peanuts and sautéed with potatoes using spices with generous squeeze of lemon. It has a chewy texture and takes on the taste of its accompaniments. </p>
                 <p class="">
                   <a href="#" class="probootstrap-custom-link link-sm recipe-modal" modal-data="Sabudana upma">Read More</a>
                 </p>                                                                    
@@ -550,22 +550,56 @@
 
           <div class="modal-body">       
 
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#preparation" aria-controls="preparation" role="tab" data-toggle="tab">Preparation & Cooking time</a></li>
-                <li role="presentation"><a href="#ingredient" aria-controls="ingredient" role="tab" data-toggle="tab">Ingredients</a></li>
-                <li role="presentation"><a href="#cooking" aria-controls="cooking" role="tab" data-toggle="tab">Cooking method</a></li>
-                <li role="presentation"><a href="#tipstrick" aria-controls="tipstrick" role="tab" data-toggle="tab">Tips & Tricks</a></li>
-              </ul>
-            
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active panel-body" id="preparation"></div>
-                <div role="tabpanel" class="tab-pane panel-body" id="ingredient"></div>
-                <div role="tabpanel" class="tab-pane panel-body" id="cooking"></div>
-                <div role="tabpanel" class="tab-pane panel-body" id="tipstrick"></div>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Preparation and cooking time
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div id="preparation"></div>
+                </div>
               </div>
-
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Ingredients
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div id="ingredient"></div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Cooking method
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div id="cooking"></div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Tips and tricks
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div id="tipstrick"></div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="modal-footer">
