@@ -376,6 +376,16 @@ a:hover, a:focus, a:active {
   .probootstrap-navbar .navbar-nav > li.active > a {
     color: rgba(0, 0, 0, 0.7);
   }
+
+  .probootstrap-navbar a.navbar-brand img{
+    width:30px !important;
+    margin-top: -10px !important;
+  }
+
+  .probootstrap-navbar a.navbar-brand span {
+    font-size: 2rem;
+    color: #000000 !important;
+  }
 }
 
 .probootstrap-navbar .navbar-nav > li.active > a:active, .probootstrap-navbar .navbar-nav > li.active > a:focus, .probootstrap-navbar .navbar-nav > li.active > a:hover {
