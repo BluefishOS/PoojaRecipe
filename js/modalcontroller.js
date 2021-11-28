@@ -107,14 +107,14 @@ var ModalData =[
         ]
     },
     {
-        "title" : "Sandwich",
+        "title" : "Bajra Khichadi",
         "preparation" :[
             {
                 "title" :"",
                 "data":[
                     "Prepration- 10 min",
-                    "Cooking - 0 min",
-                    "serve- 1 person"
+                    "Cooking - 15 min",
+                    "serve- 2 to 3 person"
                 ]
             }
         ],
@@ -122,13 +122,16 @@ var ModalData =[
             {
                 "title" :"",
                 "data":[
-                    "Ripe Tomato- 2 slice",
-                    "Onion - 2 slice",
-                    "Bell pepper- 2 slice",
-                    "Green chilli chopped- 1/2 tspn",
-                    "Chat masala- 1/2 tspn",
-                    "Butter for slather- 1 tspn",
-                    "Bread- 2 slice",
+                    "Soaked Bajra - 1 Cup",
+                    "Moong Lentil- 1/2 Cup",
+                    "Chopped Tomato- 2 medium size",
+                    "Chopped Onion - 1 medium size",
+                    "Chopped Green Chilli- 1 tspn",
+                    "Garam masala- 1/2 tspn",
+                    "Turmeric powder- 1/4 tspn",
+                    "Oil- 1 tbspn",
+                    "Cumin Seeds-1 tspn",
+                    "Water- 4 cups ",
                     "Salt- as per your taste",
                 ]
             }
@@ -137,10 +140,13 @@ var ModalData =[
             {
                 "title" :"",
                 "data":[
-                    "Toast the bread.",
-                    "Place it on chopping board and slather butter on it.",
-                    "Put sliced veggies and sprinkle salt and chat masala.",
-                    "Serve it with tomato sauce or green coriander chutney"   
+                    "Take a pressure cooker, Switch on the Saute mode and heat oil on medium flame.",
+                    "Add cumin seeds,green chilli and saute it for 30 sec .",
+                    "Add onion & tomato, saute it until softened.",
+                    "Add Bajra & lentil stire it, then mix water & spices.",
+                    "Close the lid and allow 3 vessel on medium flame.",
+                    "Let the pressure release, once the pressure released, open the lid and give it a good stire.",
+                    "Serve it with pickle & yogurt.",  
             
                 ]
             }
@@ -149,9 +155,9 @@ var ModalData =[
             {
                 "title" :"",
                 "data":[
-                    "You can take veggeis as per your choice",
-                    "You can spread mayonnaise,sliced cheese & grated cheese",
-                    
+                    "If you forgot to soak the Bajra, you can soak it in hot water for 3 to 4 hours.",
+                    "You can also make it, first boiled it with lintle and saute it on frying pan.",
+                    "You can serve it with papad, ghee & chutney as per your choice.",
                 ]
             }
         ]
